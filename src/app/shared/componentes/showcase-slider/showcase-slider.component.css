@@ -1,0 +1,8 @@
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-image {
+    background: url('../../../../assets/img/image1.jpg');
+    background-size: cover;
+}
