@@ -7,9 +7,9 @@
        attr.data-slide-to="{{i}}" ></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item " 
-        *ngFor="let slider of listaShowcase; let i = index">
-        <div class="container">
+      <div class="carousel-item carousel-image" 
+        *ngFor="let slider of listaShowcase; let i = index"  > 
+        <div class="container" [style.background-image]="setUrlImage(slider.imagem)">
           <div class="carousel-caption d-none d-sm-block text-right mb-5">
             <h1 class="display-3">{{slider.titulo}}</h1>
             <p class="lead">{{slider.texto}}</p>

@@ -15,4 +15,8 @@ export class ShowcaseSliderComponent implements OnInit {
     console.log(this.listaShowcase);
   }
 
+  setUrlImage(url: string): string{
+    return 'url(' + url + ')';
+  }
+
 }

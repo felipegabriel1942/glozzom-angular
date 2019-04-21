@@ -20,9 +20,9 @@ export class HomeComponent implements OnInit {
     this.listaDeDadosShowcaseSlider.push(new ShowcaseSlider('Heading One',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     + 'Quod cum magnam voluptates veniam ab culpa alias ducimus ut ipsam quae.','../../../../assets/img/image1.jpg','Sign Up Now',''));
     this.listaDeDadosShowcaseSlider.push(new ShowcaseSlider('Heading Two',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-    + 'Quod cum magnam voluptates veniam ab culpa alias ducimus ut ipsam quae.','Learn More',''));
+    + 'Quod cum magnam voluptates veniam ab culpa alias ducimus ut ipsam quae.','../../../../assets/img/image2.jpg','Learn More',''));
     this.listaDeDadosShowcaseSlider.push(new ShowcaseSlider('Heading Three',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-    + 'Quod cum magnam voluptates veniam ab culpa alias ducimus ut ipsam quae.','Make More',''))
+    + 'Quod cum magnam voluptates veniam ab culpa alias ducimus ut ipsam quae.','../../../../assets/img/image3.jpg','Make More',''))
   }
 
 }
