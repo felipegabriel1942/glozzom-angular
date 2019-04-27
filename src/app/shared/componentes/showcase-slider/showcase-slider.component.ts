@@ -6,17 +6,13 @@ import { ShowcaseSlider } from './model/showcase-slider.model';
   templateUrl: './showcase-slider.component.html',
   styleUrls: ['./showcase-slider.component.css']
 })
-export class ShowcaseSliderComponent implements OnInit {
+export class ShowcaseSliderComponent {
 
   @Input() listaShowcase = new Array<ShowcaseSlider>();
-  constructor() { }
-
-  ngOnInit() {
-    console.log(this.listaShowcase);
-  }
-
-  setUrlImage(url: string): string{
+ 
+  public setUrlImage(url: string): string{
     return 'url(' + url + ')';
   }
 
+ 
 }

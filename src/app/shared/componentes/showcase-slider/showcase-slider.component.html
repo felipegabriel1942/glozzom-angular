@@ -3,13 +3,15 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel"
         class="{{ (i == 0) ? 'active' : '' }}"
-       *ngFor="let slider of listaShowcase; let i = index"
+       *ngFor="let slider of listaShowcase; let i = index; let i = index"
        attr.data-slide-to="{{i}}" ></li>
     </ol>
+
     <div class="carousel-inner">
-      <div class="carousel-item carousel-image" 
-        *ngFor="let slider of listaShowcase; let i = index"  > 
-        <div class="container" [style.background-image]="setUrlImage(slider.imagem)">
+      <div class="carousel-item {{ (i == 0) ? 'active' : '' }}" 
+        *ngFor="let slider of listaShowcase; let i = index"
+        [style.background-image]="setUrlImage(slider.imagem)" > 
+        <div class="container" >
           <div class="carousel-caption d-none d-sm-block text-right mb-5">
             <h1 class="display-3">{{slider.titulo}}</h1>
             <p class="lead">{{slider.texto}}</p>
@@ -18,6 +20,7 @@
         </div>
       </div>
     </div>
+
     <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
       <span class="carousel-control-prev-icon"></span>
     </a>
